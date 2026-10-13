@@ -1,0 +1,408 @@
+{
+ "base": {
+  "rows": [
+   {
+    "job": "J1",
+    "op": 1,
+    "machine": "프레스",
+    "start": 0,
+    "end": 3,
+    "power": 55
+   },
+   {
+    "job": "J2",
+    "op": 1,
+    "machine": "용접",
+    "start": 0,
+    "end": 3,
+    "power": 45
+   },
+   {
+    "job": "J4",
+    "op": 1,
+    "machine": "도장",
+    "start": 0,
+    "end": 2,
+    "power": 30
+   },
+   {
+    "job": "J1",
+    "op": 2,
+    "machine": "용접",
+    "start": 3,
+    "end": 5,
+    "power": 40
+   },
+   {
+    "job": "J2",
+    "op": 2,
+    "machine": "프레스",
+    "start": 3,
+    "end": 5,
+    "power": 60
+   },
+   {
+    "job": "J1",
+    "op": 3,
+    "machine": "도장",
+    "start": 5,
+    "end": 8,
+    "power": 35
+   },
+   {
+    "job": "J2",
+    "op": 3,
+    "machine": "검사",
+    "start": 5,
+    "end": 7,
+    "power": 10
+   },
+   {
+    "job": "J3",
+    "op": 1,
+    "machine": "프레스",
+    "start": 5,
+    "end": 7,
+    "power": 50
+   },
+   {
+    "job": "J4",
+    "op": 2,
+    "machine": "용접",
+    "start": 5,
+    "end": 8,
+    "power": 45
+   },
+   {
+    "job": "J5",
+    "op": 1,
+    "machine": "프레스",
+    "start": 7,
+    "end": 11,
+    "power": 60
+   },
+   {
+    "job": "J1",
+    "op": 4,
+    "machine": "검사",
+    "start": 8,
+    "end": 9,
+    "power": 10
+   },
+   {
+    "job": "J2",
+    "op": 4,
+    "machine": "도장",
+    "start": 8,
+    "end": 10,
+    "power": 30
+   },
+   {
+    "job": "J6",
+    "op": 1,
+    "machine": "용접",
+    "start": 8,
+    "end": 10,
+    "power": 40
+   },
+   {
+    "job": "J3",
+    "op": 2,
+    "machine": "도장",
+    "start": 10,
+    "end": 14,
+    "power": 35
+   },
+   {
+    "job": "J4",
+    "op": 3,
+    "machine": "프레스",
+    "start": 11,
+    "end": 14,
+    "power": 55
+   },
+   {
+    "job": "J5",
+    "op": 2,
+    "machine": "용접",
+    "start": 11,
+    "end": 13,
+    "power": 40
+   },
+   {
+    "job": "J5",
+    "op": 3,
+    "machine": "검사",
+    "start": 13,
+    "end": 15,
+    "power": 10
+   },
+   {
+    "job": "J3",
+    "op": 3,
+    "machine": "용접",
+    "start": 14,
+    "end": 16,
+    "power": 40
+   },
+   {
+    "job": "J6",
+    "op": 2,
+    "machine": "도장",
+    "start": 14,
+    "end": 17,
+    "power": 35
+   },
+   {
+    "job": "J4",
+    "op": 4,
+    "machine": "검사",
+    "start": 15,
+    "end": 16,
+    "power": 10
+   },
+   {
+    "job": "J3",
+    "op": 4,
+    "machine": "검사",
+    "start": 16,
+    "end": 17,
+    "power": 10
+   },
+   {
+    "job": "J5",
+    "op": 4,
+    "machine": "도장",
+    "start": 17,
+    "end": 19,
+    "power": 30
+   },
+   {
+    "job": "J6",
+    "op": 3,
+    "machine": "프레스",
+    "start": 17,
+    "end": 19,
+    "power": 50
+   },
+   {
+    "job": "J6",
+    "op": 4,
+    "machine": "검사",
+    "start": 19,
+    "end": 21,
+    "power": 10
+   }
+  ],
+  "makespan": 21,
+  "status": "GREEDY"
+ },
+ "opt": {
+  "rows": [
+   {
+    "job": "J1",
+    "op": 1,
+    "machine": "프레스",
+    "start": 6,
+    "end": 9,
+    "power": 55
+   },
+   {
+    "job": "J1",
+    "op": 2,
+    "machine": "용접",
+    "start": 10,
+    "end": 12,
+    "power": 40
+   },
+   {
+    "job": "J1",
+    "op": 3,
+    "machine": "도장",
+    "start": 13,
+    "end": 16,
+    "power": 35
+   },
+   {
+    "job": "J1",
+    "op": 4,
+    "machine": "검사",
+    "start": 16,
+    "end": 17,
+    "power": 10
+   },
+   {
+    "job": "J2",
+    "op": 1,
+    "machine": "용접",
+    "start": 7,
+    "end": 10,
+    "power": 45
+   },
+   {
+    "job": "J2",
+    "op": 2,
+    "machine": "프레스",
+    "start": 12,
+    "end": 14,
+    "power": 60
+   },
+   {
+    "job": "J2",
+    "op": 3,
+    "machine": "검사",
+    "start": 14,
+    "end": 16,
+    "power": 10
+   },
+   {
+    "job": "J2",
+    "op": 4,
+    "machine": "도장",
+    "start": 16,
+    "end": 18,
+    "power": 30
+   },
+   {
+    "job": "J3",
+    "op": 1,
+    "machine": "프레스",
+    "start": 4,
+    "end": 6,
+    "power": 50
+   },
+   {
+    "job": "J3",
+    "op": 2,
+    "machine": "도장",
+    "start": 9,
+    "end": 13,
+    "power": 35
+   },
+   {
+    "job": "J3",
+    "op": 3,
+    "machine": "용접",
+    "start": 17,
+    "end": 19,
+    "power": 40
+   },
+   {
+    "job": "J3",
+    "op": 4,
+    "machine": "검사",
+    "start": 19,
+    "end": 20,
+    "power": 10
+   },
+   {
+    "job": "J4",
+    "op": 1,
+    "machine": "도장",
+    "start": 0,
+    "end": 2,
+    "power": 30
+   },
+   {
+    "job": "J4",
+    "op": 2,
+    "machine": "용접",
+    "start": 14,
+    "end": 17,
+    "power": 45
+   },
+   {
+    "job": "J4",
+    "op": 3,
+    "machine": "프레스",
+    "start": 17,
+    "end": 20,
+    "power": 55
+   },
+   {
+    "job": "J4",
+    "op": 4,
+    "machine": "검사",
+    "start": 20,
+    "end": 21,
+    "power": 10
+   },
+   {
+    "job": "J5",
+    "op": 1,
+    "machine": "프레스",
+    "start": 0,
+    "end": 4,
+    "power": 60
+   },
+   {
+    "job": "J5",
+    "op": 2,
+    "machine": "용접",
+    "start": 4,
+    "end": 6,
+    "power": 40
+   },
+   {
+    "job": "J5",
+    "op": 3,
+    "machine": "검사",
+    "start": 6,
+    "end": 8,
+    "power": 10
+   },
+   {
+    "job": "J5",
+    "op": 4,
+    "machine": "도장",
+    "start": 18,
+    "end": 20,
+    "power": 30
+   },
+   {
+    "job": "J6",
+    "op": 1,
+    "machine": "용접",
+    "start": 2,
+    "end": 4,
+    "power": 40
+   },
+   {
+    "job": "J6",
+    "op": 2,
+    "machine": "도장",
+    "start": 4,
+    "end": 7,
+    "power": 35
+   },
+   {
+    "job": "J6",
+    "op": 3,
+    "machine": "프레스",
+    "start": 10,
+    "end": 12,
+    "power": 50
+   },
+   {
+    "job": "J6",
+    "op": 4,
+    "machine": "검사",
+    "start": 12,
+    "end": 14,
+    "power": 10
+   }
+  ],
+  "makespan": 21,
+  "status": "OPTIMAL"
+ },
+ "base_peak": 180,
+ "opt_peak": 165,
+ "slot_min": 30,
+ "base_load": 40,
+ "machines": [
+  "프레스",
+  "용접",
+  "도장",
+  "검사"
+ ]
+}
