@@ -1,0 +1,259 @@
+{
+ "summary": {
+  "time_limit_s": 30,
+  "same_optimum": "9/10",
+  "cp_proved": 10,
+  "mip_proved": 8,
+  "cp_median_s": 0.07927633700001024,
+  "mip_median_s": 3.945675756499952
+ },
+ "base": {
+  "horizon": 21,
+  "cp": {
+   "peak": 165,
+   "status": "OPTIMAL",
+   "seconds": 3.03849160499999
+  },
+  "mip": {
+   "peak": 165,
+   "status": "FEASIBLE",
+   "seconds": 30.00357756099993,
+   "n_vars": 474,
+   "n_cons": 147
+  }
+ },
+ "random": [
+  {
+   "horizon": 19,
+   "cp": {
+    "peak": 143,
+    "status": "OPTIMAL",
+    "seconds": 0.7957761110000092
+   },
+   "mip": {
+    "peak": 143,
+    "status": "OPTIMAL",
+    "seconds": 5.681418729000029,
+    "n_vars": 353,
+    "n_cons": 129
+   }
+  },
+  {
+   "horizon": 23,
+   "cp": {
+    "peak": 141,
+    "status": "OPTIMAL",
+    "seconds": 0.06859626200002822
+   },
+   "mip": {
+    "peak": 141,
+    "status": "OPTIMAL",
+    "seconds": 2.7632606059999034,
+    "n_vars": 424,
+    "n_cons": 149
+   }
+  },
+  {
+   "horizon": 19,
+   "cp": {
+    "peak": 137,
+    "status": "OPTIMAL",
+    "seconds": 0.07202156500000001
+   },
+   "mip": {
+    "peak": 137,
+    "status": "OPTIMAL",
+    "seconds": 4.998672957999929,
+    "n_vars": 356,
+    "n_cons": 129
+   }
+  },
+  {
+   "horizon": 17,
+   "cp": {
+    "peak": 151,
+    "status": "OPTIMAL",
+    "seconds": 0.04678290799995466
+   },
+   "mip": {
+    "peak": 151,
+    "status": "OPTIMAL",
+    "seconds": 0.9790362950000144,
+    "n_vars": 296,
+    "n_cons": 117
+   }
+  },
+  {
+   "horizon": 20,
+   "cp": {
+    "peak": 137,
+    "status": "OPTIMAL",
+    "seconds": 0.6191038450000406
+   },
+   "mip": {
+    "peak": 137,
+    "status": "OPTIMAL",
+    "seconds": 28.840875221000033,
+    "n_vars": 371,
+    "n_cons": 134
+   }
+  },
+  {
+   "horizon": 25,
+   "cp": {
+    "peak": 117,
+    "status": "OPTIMAL",
+    "seconds": 2.7154663619999155
+   },
+   "mip": {
+    "peak": 118,
+    "status": "FEASIBLE",
+    "seconds": 30.001617441000008,
+    "n_vars": 520,
+    "n_cons": 163
+   }
+  },
+  {
+   "horizon": 18,
+   "cp": {
+    "peak": 145,
+    "status": "OPTIMAL",
+    "seconds": 0.08653110900002048
+   },
+   "mip": {
+    "peak": 145,
+    "status": "OPTIMAL",
+    "seconds": 0.7229750230000036,
+    "n_vars": 335,
+    "n_cons": 124
+   }
+  },
+  {
+   "horizon": 19,
+   "cp": {
+    "peak": 165,
+    "status": "OPTIMAL",
+    "seconds": 0.03447515799996381
+   },
+   "mip": {
+    "peak": 165,
+    "status": "OPTIMAL",
+    "seconds": 1.2496712240000534,
+    "n_vars": 383,
+    "n_cons": 133
+   }
+  },
+  {
+   "horizon": 23,
+   "cp": {
+    "peak": 157,
+    "status": "OPTIMAL",
+    "seconds": 1.61107877500001
+   },
+   "mip": {
+    "peak": 157,
+    "status": "FEASIBLE",
+    "seconds": 30.000746373000084,
+    "n_vars": 491,
+    "n_cons": 155
+   }
+  },
+  {
+   "horizon": 18,
+   "cp": {
+    "peak": 180,
+    "status": "OPTIMAL",
+    "seconds": 0.021076198999935514
+   },
+   "mip": {
+    "peak": 180,
+    "status": "OPTIMAL",
+    "seconds": 2.892678554999975,
+    "n_vars": 328,
+    "n_cons": 124
+   }
+  }
+ ],
+ "scale": [
+  {
+   "horizon": 13,
+   "cp": {
+    "peak": 148,
+    "status": "OPTIMAL",
+    "seconds": 0.006523942000058014
+   },
+   "mip": {
+    "peak": 148,
+    "status": "OPTIMAL",
+    "seconds": 0.004163178999988304,
+    "n_vars": 113,
+    "n_cons": 82
+   },
+   "n_jobs": 3
+  },
+  {
+   "horizon": 19,
+   "cp": {
+    "peak": 117,
+    "status": "OPTIMAL",
+    "seconds": 0.015245394999965356
+   },
+   "mip": {
+    "peak": 117,
+    "status": "OPTIMAL",
+    "seconds": 0.9869800709999481,
+    "n_vars": 232,
+    "n_cons": 117
+   },
+   "n_jobs": 4
+  },
+  {
+   "horizon": 23,
+   "cp": {
+    "peak": 161,
+    "status": "OPTIMAL",
+    "seconds": 1.0731685770000468
+   },
+   "mip": {
+    "peak": 161,
+    "status": "FEASIBLE",
+    "seconds": 30.00748653200003,
+    "n_vars": 442,
+    "n_cons": 151
+   },
+   "n_jobs": 6
+  },
+  {
+   "horizon": 25,
+   "cp": {
+    "peak": 152,
+    "status": "FEASIBLE",
+    "seconds": 30.00664641000003
+   },
+   "mip": {
+    "peak": 157,
+    "status": "FEASIBLE",
+    "seconds": 30.001450300999977,
+    "n_vars": 634,
+    "n_cons": 171
+   },
+   "n_jobs": 8
+  },
+  {
+   "horizon": 36,
+   "cp": {
+    "peak": 136,
+    "status": "FEASIBLE",
+    "seconds": 30.014993740000023
+   },
+   "mip": {
+    "peak": 142,
+    "status": "FEASIBLE",
+    "seconds": 30.001420669000026,
+    "n_vars": 1241,
+    "n_cons": 242
+   },
+   "n_jobs": 10
+  }
+ ]
+}

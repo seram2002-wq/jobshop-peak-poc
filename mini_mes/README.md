@@ -12,6 +12,21 @@ flowchart LR
     B -->|JSON| D[Streamlit 관리자 화면<br>간트 차트 · 전력 부하]
 ```
 
+## 화면
+
+**스케줄 최적화** · 선착순 규칙(피크 180kW)과 비교해, 완료 시간을 30분 늘리는 대신 피크를 160kW로 낮춘 결과
+
+![스케줄 최적화](docs/optimize.png)
+![최적 일정과 전력 부하](docs/optimize_result.png)
+
+**작업 지시** · DB에 등록된 작업과 공정, 설비 상태 변경, 작업 추가
+
+![작업 지시](docs/orders.png)
+
+**실행 기록** · 실행할 때마다 방식·완료 시간·피크가 DB에 쌓임
+
+![실행 기록](docs/history.png)
+
 ## 구성
 
 | 파일 | 역할 |
@@ -20,14 +35,6 @@ flowchart LR
 | `api.py` | FastAPI 서버: 작업 지시 CRUD, 설비 상태 변경, 최적화 실행, 실행 기록 조회 |
 | `app.py` | Streamlit 화면: 작업 지시 관리, 최적화 실행과 간트 차트, 실행 기록 |
 | `test_api.py` | API 흐름 테스트 (최적화 결과, 설비 중복 없음, 작업 추가, 점검 중 설비 처리) |
-
-## 화면
-
-| 스케줄 최적화 | 작업 지시 |
-|---|---|
-| ![최적화](docs/optimize.png) | ![작업 지시](docs/orders.png) |
-
-![실행 기록](docs/history.png)
 
 ## API
 
