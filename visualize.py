@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 
 for f in font_manager.findSystemFonts():
-    if "NotoSansCJK-Regular" in f:
+    if "NotoSansCJK-Regular" in f or "malgun" in f.lower() or "AppleGothic" in f:
         font_manager.fontManager.addfont(f)
         plt.rcParams["font.family"] = font_manager.FontProperties(fname=f).get_name()
         break

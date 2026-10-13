@@ -32,34 +32,34 @@ JOBS = {
     "J5": [(0, 4, 60), (1, 2, 40), (3, 2, 10), (2, 2, 30)],
     "J6": [(1, 2, 40), (2, 3, 35), (0, 2, 50), (3, 2, 10)],
 }
-HORIZON = sum(d for ops in JOBS.values() for _, d, _ in ops)
 
 
-def build_model():
+def build_model(jobs=JOBS):
     m = cp_model.CpModel()
     ops = {}  # (job, k) -> (start, end, interval, machine, power)
     per_machine = collections.defaultdict(list)
-    for j, route in JOBS.items():
+    horizon = sum(d for ops_ in jobs.values() for _, d, _ in ops_)
+    for j, route in jobs.items():
         for k, (mc, dur, pw) in enumerate(route):
-            s = m.NewIntVar(0, HORIZON, f"s_{j}_{k}")
-            e = m.NewIntVar(0, HORIZON, f"e_{j}_{k}")
+            s = m.NewIntVar(0, horizon, f"s_{j}_{k}")
+            e = m.NewIntVar(0, horizon, f"e_{j}_{k}")
             itv = m.NewIntervalVar(s, dur, e, f"i_{j}_{k}")
             ops[(j, k)] = (s, e, itv, mc, pw)
             per_machine[mc].append(itv)
     for itvs in per_machine.values():          # 설비 중복 금지
         m.AddNoOverlap(itvs)
-    for j, route in JOBS.items():              # 공정 선후 관계
+    for j, route in jobs.items():              # 공정 선후 관계
         for k in range(len(route) - 1):
             m.Add(ops[(j, k + 1)][0] >= ops[(j, k)][1])
-    makespan = m.NewIntVar(0, HORIZON, "makespan")
-    m.AddMaxEquality(makespan, [ops[(j, len(r) - 1)][1] for j, r in JOBS.items()])
-    peak = m.NewIntVar(0, sum(p for r in JOBS.values() for _, _, p in r), "peak")
+    makespan = m.NewIntVar(0, horizon, "makespan")
+    m.AddMaxEquality(makespan, [ops[(j, len(r) - 1)][1] for j, r in jobs.items()])
+    peak = m.NewIntVar(0, sum(p for r in jobs.values() for _, _, p in r), "peak")
     m.AddCumulative([o[2] for o in ops.values()], [o[4] for o in ops.values()], peak)
     return m, ops, makespan, peak
 
 
-def solve(objective, fixed=None, seconds=20):
-    m, ops, makespan, peak = build_model()
+def solve(objective, fixed=None, seconds=20, jobs=JOBS):
+    m, ops, makespan, peak = build_model(jobs)
     for name, (op, val) in (fixed or {}).items():
         var = makespan if name == "makespan" else peak
         m.Add(var <= val) if op == "<=" else m.Add(var == val)
@@ -77,17 +77,17 @@ def solve(objective, fixed=None, seconds=20):
                 status=solver.StatusName(status))
 
 
-def greedy_schedule():
+def greedy_schedule(jobs=JOBS):
     """현장에서 흔한 방식: 설비가 비고 이전 공정이 끝나면 바로 시작 (작업 번호 순 우선)"""
     machine_free = [0] * len(MACHINES)
-    job_ready = {j: 0 for j in JOBS}
-    next_op = {j: 0 for j in JOBS}
+    job_ready = {j: 0 for j in jobs}
+    next_op = {j: 0 for j in jobs}
     rows = []
-    remaining = sum(len(r) for r in JOBS.values())
+    remaining = sum(len(r) for r in jobs.values())
     while remaining:
         # 지금 시작할 수 있는 가장 이른 공정을 고른다 (동률이면 작업 번호 순)
         best = None
-        for j, route in JOBS.items():
+        for j, route in jobs.items():
             k = next_op[j]
             if k == len(route):
                 continue
