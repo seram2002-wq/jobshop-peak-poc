@@ -21,6 +21,14 @@ flowchart LR
 | `app.py` | Streamlit 화면: 작업 지시 관리, 최적화 실행과 간트 차트, 실행 기록 |
 | `test_api.py` | API 흐름 테스트 (최적화 결과, 설비 중복 없음, 작업 추가, 점검 중 설비 처리) |
 
+## 화면
+
+| 스케줄 최적화 | 작업 지시 |
+|---|---|
+| ![최적화](docs/optimize.png) | ![작업 지시](docs/orders.png) |
+
+![실행 기록](docs/history.png)
+
 ## API
 
 | 메서드 | 경로 | 설명 |

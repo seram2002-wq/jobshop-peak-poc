@@ -35,13 +35,25 @@ st.title("Mini MES · 전력 피크를 고려한 생산 스케줄링")
 st.caption("DB의 작업 지시 → OR-Tools 최적화 API → 관리자 화면. 가상 공장 예제입니다.")
 
 
+def job_colors():
+    """작업별 색을 고정해 두 간트 차트에서 같은 작업이 같은 색으로 보이게 한다."""
+    jobs = sorted({o["job_id"] for o in (call("GET", "/orders") or [])})
+    return {j: COLORS[i % len(COLORS)] for i, j in enumerate(jobs)}
+
+
+def machine_order():
+    return [m["name"] for m in (call("GET", "/machines") or [])]
+
+
 def gantt(items, title):
-    df = pd.DataFrame(items)
+    df = pd.DataFrame(items).sort_values("job_id")
     df["시작"] = df["start_min"].apply(lambda m: T0 + dt.timedelta(minutes=m))
     df["종료"] = df["end_min"].apply(lambda m: T0 + dt.timedelta(minutes=m))
     fig = px.timeline(df, x_start="시작", x_end="종료", y="machine", color="job_id", text="job_id",
-                      hover_data={"power_kw": True}, color_discrete_sequence=COLORS, title=title)
-    fig.update_yaxes(autorange="reversed", title=None)
+                      hover_data={"power_kw": True}, color_discrete_map=job_colors(),
+                      category_orders={"machine": machine_order(), "job_id": sorted(df["job_id"].unique())},
+                      title=title)
+    fig.update_yaxes(title=None)
     fig.update_layout(height=300, margin=dict(l=10, r=10, t=40, b=10), legend_title_text="작업")
     return fig
 
@@ -123,6 +135,10 @@ with tab2:
         for name, s, color in [("선착순 규칙", b, "#b3bdcc"), ("최적 일정", o, "#18212b")]:
             x, y = profile(s["items"], res["base_load_kw"])
             fig.add_trace(go.Scatter(x=x, y=y, name=name, line_shape="hv", line=dict(color=color, width=3)))
+        fig.add_hline(y=b["peak_kw"], line_dash="dot", line_color="#b3bdcc",
+                      annotation_text=f"선착순 피크 {b['peak_kw']}", annotation_position="top left")
+        fig.add_hline(y=o["peak_kw"], line_dash="dot", line_color="#d9622b",
+                      annotation_text=f"최적 피크 {o['peak_kw']}", annotation_position="bottom left")
         fig.update_layout(title="시간별 전력 부하 (kW)", height=320, margin=dict(l=10, r=10, t=40, b=10))
         st.plotly_chart(fig, width="stretch")
 
