@@ -1,0 +1,526 @@
+{
+ "summary": {
+  "n": 50,
+  "mean_pct": 22.201349799509675,
+  "median_pct": 22.904313451924196,
+  "min_pct": 2.9850746268656714,
+  "max_pct": 37.01657458563536,
+  "improved": 50,
+  "optimal": 50
+ },
+ "random": [
+  {
+   "id": 0,
+   "greedy_peak": 195,
+   "opt_peak": 155,
+   "reduction_kw": 40,
+   "reduction_pct": 20.51282051282051,
+   "makespan": 19,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 1,
+   "greedy_peak": 178,
+   "opt_peak": 161,
+   "reduction_kw": 17,
+   "reduction_pct": 9.550561797752808,
+   "makespan": 21,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 2,
+   "greedy_peak": 191,
+   "opt_peak": 125,
+   "reduction_kw": 66,
+   "reduction_pct": 34.55497382198953,
+   "makespan": 20,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 3,
+   "greedy_peak": 181,
+   "opt_peak": 114,
+   "reduction_kw": 67,
+   "reduction_pct": 37.01657458563536,
+   "makespan": 23,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 4,
+   "greedy_peak": 187,
+   "opt_peak": 156,
+   "reduction_kw": 31,
+   "reduction_pct": 16.577540106951872,
+   "makespan": 20,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 5,
+   "greedy_peak": 151,
+   "opt_peak": 119,
+   "reduction_kw": 32,
+   "reduction_pct": 21.192052980132452,
+   "makespan": 24,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 6,
+   "greedy_peak": 192,
+   "opt_peak": 166,
+   "reduction_kw": 26,
+   "reduction_pct": 13.541666666666666,
+   "makespan": 21,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 7,
+   "greedy_peak": 196,
+   "opt_peak": 136,
+   "reduction_kw": 60,
+   "reduction_pct": 30.612244897959183,
+   "makespan": 21,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 8,
+   "greedy_peak": 195,
+   "opt_peak": 144,
+   "reduction_kw": 51,
+   "reduction_pct": 26.153846153846157,
+   "makespan": 25,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 9,
+   "greedy_peak": 183,
+   "opt_peak": 146,
+   "reduction_kw": 37,
+   "reduction_pct": 20.21857923497268,
+   "makespan": 20,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 10,
+   "greedy_peak": 191,
+   "opt_peak": 169,
+   "reduction_kw": 22,
+   "reduction_pct": 11.518324607329843,
+   "makespan": 20,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 11,
+   "greedy_peak": 203,
+   "opt_peak": 174,
+   "reduction_kw": 29,
+   "reduction_pct": 14.285714285714285,
+   "makespan": 18,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 12,
+   "greedy_peak": 161,
+   "opt_peak": 141,
+   "reduction_kw": 20,
+   "reduction_pct": 12.422360248447205,
+   "makespan": 28,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 13,
+   "greedy_peak": 198,
+   "opt_peak": 131,
+   "reduction_kw": 67,
+   "reduction_pct": 33.83838383838384,
+   "makespan": 28,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 14,
+   "greedy_peak": 183,
+   "opt_peak": 142,
+   "reduction_kw": 41,
+   "reduction_pct": 22.404371584699454,
+   "makespan": 21,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 15,
+   "greedy_peak": 165,
+   "opt_peak": 114,
+   "reduction_kw": 51,
+   "reduction_pct": 30.909090909090907,
+   "makespan": 25,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 16,
+   "greedy_peak": 195,
+   "opt_peak": 135,
+   "reduction_kw": 60,
+   "reduction_pct": 30.76923076923077,
+   "makespan": 21,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 17,
+   "greedy_peak": 182,
+   "opt_peak": 133,
+   "reduction_kw": 49,
+   "reduction_pct": 26.923076923076923,
+   "makespan": 25,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 18,
+   "greedy_peak": 193,
+   "opt_peak": 155,
+   "reduction_kw": 38,
+   "reduction_pct": 19.689119170984455,
+   "makespan": 21,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 19,
+   "greedy_peak": 185,
+   "opt_peak": 160,
+   "reduction_kw": 25,
+   "reduction_pct": 13.513513513513514,
+   "makespan": 24,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 20,
+   "greedy_peak": 185,
+   "opt_peak": 140,
+   "reduction_kw": 45,
+   "reduction_pct": 24.324324324324326,
+   "makespan": 17,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 21,
+   "greedy_peak": 177,
+   "opt_peak": 117,
+   "reduction_kw": 60,
+   "reduction_pct": 33.89830508474576,
+   "makespan": 23,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 22,
+   "greedy_peak": 184,
+   "opt_peak": 155,
+   "reduction_kw": 29,
+   "reduction_pct": 15.760869565217392,
+   "makespan": 20,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 23,
+   "greedy_peak": 196,
+   "opt_peak": 170,
+   "reduction_kw": 26,
+   "reduction_pct": 13.26530612244898,
+   "makespan": 17,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 24,
+   "greedy_peak": 194,
+   "opt_peak": 164,
+   "reduction_kw": 30,
+   "reduction_pct": 15.463917525773196,
+   "makespan": 19,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 25,
+   "greedy_peak": 193,
+   "opt_peak": 135,
+   "reduction_kw": 58,
+   "reduction_pct": 30.05181347150259,
+   "makespan": 23,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 26,
+   "greedy_peak": 200,
+   "opt_peak": 177,
+   "reduction_kw": 23,
+   "reduction_pct": 11.5,
+   "makespan": 19,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 27,
+   "greedy_peak": 204,
+   "opt_peak": 152,
+   "reduction_kw": 52,
+   "reduction_pct": 25.49019607843137,
+   "makespan": 18,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 28,
+   "greedy_peak": 191,
+   "opt_peak": 130,
+   "reduction_kw": 61,
+   "reduction_pct": 31.93717277486911,
+   "makespan": 23,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 29,
+   "greedy_peak": 194,
+   "opt_peak": 161,
+   "reduction_kw": 33,
+   "reduction_pct": 17.010309278350515,
+   "makespan": 21,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 30,
+   "greedy_peak": 183,
+   "opt_peak": 142,
+   "reduction_kw": 41,
+   "reduction_pct": 22.404371584699454,
+   "makespan": 25,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 31,
+   "greedy_peak": 181,
+   "opt_peak": 118,
+   "reduction_kw": 63,
+   "reduction_pct": 34.806629834254146,
+   "makespan": 25,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 32,
+   "greedy_peak": 185,
+   "opt_peak": 169,
+   "reduction_kw": 16,
+   "reduction_pct": 8.64864864864865,
+   "makespan": 17,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 33,
+   "greedy_peak": 189,
+   "opt_peak": 144,
+   "reduction_kw": 45,
+   "reduction_pct": 23.809523809523807,
+   "makespan": 26,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 34,
+   "greedy_peak": 183,
+   "opt_peak": 142,
+   "reduction_kw": 41,
+   "reduction_pct": 22.404371584699454,
+   "makespan": 20,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 35,
+   "greedy_peak": 192,
+   "opt_peak": 134,
+   "reduction_kw": 58,
+   "reduction_pct": 30.208333333333332,
+   "makespan": 26,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 36,
+   "greedy_peak": 194,
+   "opt_peak": 178,
+   "reduction_kw": 16,
+   "reduction_pct": 8.24742268041237,
+   "makespan": 17,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 37,
+   "greedy_peak": 201,
+   "opt_peak": 195,
+   "reduction_kw": 6,
+   "reduction_pct": 2.9850746268656714,
+   "makespan": 16,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 38,
+   "greedy_peak": 198,
+   "opt_peak": 132,
+   "reduction_kw": 66,
+   "reduction_pct": 33.33333333333333,
+   "makespan": 21,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 39,
+   "greedy_peak": 183,
+   "opt_peak": 139,
+   "reduction_kw": 44,
+   "reduction_pct": 24.043715846994534,
+   "makespan": 21,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 40,
+   "greedy_peak": 195,
+   "opt_peak": 142,
+   "reduction_kw": 53,
+   "reduction_pct": 27.17948717948718,
+   "makespan": 20,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 41,
+   "greedy_peak": 182,
+   "opt_peak": 131,
+   "reduction_kw": 51,
+   "reduction_pct": 28.021978021978022,
+   "makespan": 22,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 42,
+   "greedy_peak": 188,
+   "opt_peak": 144,
+   "reduction_kw": 44,
+   "reduction_pct": 23.404255319148938,
+   "makespan": 22,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 43,
+   "greedy_peak": 180,
+   "opt_peak": 129,
+   "reduction_kw": 51,
+   "reduction_pct": 28.333333333333332,
+   "makespan": 23,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 44,
+   "greedy_peak": 183,
+   "opt_peak": 162,
+   "reduction_kw": 21,
+   "reduction_pct": 11.475409836065573,
+   "makespan": 21,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 45,
+   "greedy_peak": 199,
+   "opt_peak": 130,
+   "reduction_kw": 69,
+   "reduction_pct": 34.67336683417086,
+   "makespan": 27,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 46,
+   "greedy_peak": 204,
+   "opt_peak": 141,
+   "reduction_kw": 63,
+   "reduction_pct": 30.88235294117647,
+   "makespan": 19,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 47,
+   "greedy_peak": 190,
+   "opt_peak": 169,
+   "reduction_kw": 21,
+   "reduction_pct": 11.052631578947368,
+   "makespan": 21,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 48,
+   "greedy_peak": 191,
+   "opt_peak": 139,
+   "reduction_kw": 52,
+   "reduction_pct": 27.225130890052355,
+   "makespan": 23,
+   "status": "OPTIMAL"
+  },
+  {
+   "id": 49,
+   "greedy_peak": 183,
+   "opt_peak": 161,
+   "reduction_kw": 22,
+   "reduction_pct": 12.021857923497267,
+   "makespan": 16,
+   "status": "OPTIMAL"
+  }
+ ],
+ "tradeoff": {
+  "points": [
+   {
+    "limit_h": 9.0,
+    "peak": 180,
+    "status": "OPTIMAL"
+   },
+   {
+    "limit_h": 9.5,
+    "peak": 175,
+    "status": "OPTIMAL"
+   },
+   {
+    "limit_h": 10.0,
+    "peak": 170,
+    "status": "OPTIMAL"
+   },
+   {
+    "limit_h": 10.5,
+    "peak": 165,
+    "status": "OPTIMAL"
+   },
+   {
+    "limit_h": 11.0,
+    "peak": 160,
+    "status": "OPTIMAL"
+   },
+   {
+    "limit_h": 11.5,
+    "peak": 160,
+    "status": "OPTIMAL"
+   },
+   {
+    "limit_h": 12.0,
+    "peak": 135,
+    "status": "OPTIMAL"
+   },
+   {
+    "limit_h": 12.5,
+    "peak": 135,
+    "status": "OPTIMAL"
+   },
+   {
+    "limit_h": 13.0,
+    "peak": 135,
+    "status": "OPTIMAL"
+   },
+   {
+    "limit_h": 13.5,
+    "peak": 130,
+    "status": "OPTIMAL"
+   },
+   {
+    "limit_h": 14.0,
+    "peak": 130,
+    "status": "OPTIMAL"
+   }
+  ],
+  "greedy": {
+   "makespan_h": 10.5,
+   "peak": 180
+  }
+ }
+}
